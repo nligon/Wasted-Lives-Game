@@ -82,6 +82,33 @@ var create = function(items) {
     .exit().remove();
 };
 
+// // optimized ES6 implementation
+// const createCircle = items => {
+
+//   //  connect data points to DOM without writing anything
+//   var selection = d3.select('svg')
+//     .selectAll('circle')
+//     .data(items);
+
+//   // write circles to DOM
+//   selection
+//     .enter()
+//     .append('circle')
+//     .attr('cx', () => randInt(scrWidth * .10, scrWidth - scrWidth * .10))
+//     .attr('cy', () => randInt(scrHeight * .10, scrHeight - scrHeight * .10))
+//     .attr('r', '30')
+//     .attr('fill', 'blue');
+
+//   // modify elemental attributes
+//   selection
+//     .transition().attr('cx', () => randInt(scrWidth * .10, scrWidth - scrWidth * .10))
+//     .attr('cy', () => randInt(scrHeight * .10, scrHeight - scrHeight * .10)).duration(1000);
+
+//   // remove elements
+//   selection
+//     .exit().remove();
+// };
+
 var update = function(items) {
   // console.log('update is running.');
   var selection = d3.select('svg')
