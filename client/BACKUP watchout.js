@@ -19,13 +19,16 @@ d3.select('body').append('svg').attr('baseProfile', 'full').attr('width', 700).a
 //baseProfile="full" width="700" height="450"
 // var svg = d3.select('body').append('svg');
 numOfAsteroids = 0;
-
 var add = function(num) {
-  numOfAsteroids += num || 1;
+  console.log('clicked');
+  num = num || 1;
+  numOfAsteroids++;
 };
 
 var rem = function(num) {
-  numOfAsteroids -= num || 1;
+  console.log('clicked');
+  num = num || 1;
+  numOfAsteroids--;
 };
 
 var asteroids = [];
@@ -101,7 +104,7 @@ setInterval(function() {
   create(generateCollection('asteroid', numOfAsteroids));
   update(generateCollection('asteroid', numOfAsteroids));
   console.log(numOfAsteroids);
-}, 250);
+}, 1000);
 
 // update(generateCollection('asteroid', 3, { fill: 'green' }));
 // update(generateCollection('asteroid', 10, { fill: 'green' }));
