@@ -6,7 +6,7 @@
 }
 
 .asteroid {
-  animation: animation: whirl 1000ms linear infinite;
+  animation: counterwhirl 10000ms linear infinite;
   transform-origin: 50% 50%;
 }
 
@@ -14,6 +14,9 @@
   100% {transform: rotate(360deg);}
 }
 
+@keyframes counterwhirl {
+  100% {transform: rotate(-360deg);}
+}
 
 /*
 svg.selectAll('.player')
