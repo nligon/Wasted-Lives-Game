@@ -2,14 +2,14 @@
 <html>
 
 <head>
-  <link rel='stylesheet' type='css' href='styles.css'>
+  <link rel='stylesheet' type='text/css' href='styles.css'>
 </head>
 
 <body>
   <div class="scoreboard">
     <div class="highscore">High score: <span>0</span></div>
     <div class="current">Current score: <span>0</span></div>
-    <div class="collisions">Collisions: <span>0</span></div>
+    <div class="lives">Lives meaninglessly thrown away: <span>0</span></div>
   </div>
   <div class="board">
     <div class="mouse">
@@ -17,10 +17,10 @@
       </svg>
     </div>
   </div>
-  <div id="option">
+ <!--  <div id="option">
     <input name="updateButton" type="button" value="ADD CIRCLE" onclick="add()" />
     <input name="updateButton" type="button" value="REMOVE CIRCLE" onclick="rem()" />
-  </div>
+  </div> -->
   <script src="lib/d3.js" charset="utf-8"></script>
   <script src='watchout.js'></script>
 </body>

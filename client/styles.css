@@ -1,6 +1,24 @@
 /* your beautiful css styling goes here! */
 
+.player {
+  animation: whirl 2000ms linear infinite;
+  transform-origin: 50% 50%;
+}
 
-/* Note: an asteroid image is included in this repo.
-Feel free to use it if you like. */
+.asteroid {
+  animation: animation: whirl 1000ms linear infinite;
+  transform-origin: 50% 50%;
+}
 
+@keyframes whirl {
+  100% {transform: rotate(360deg);}
+}
+
+
+/*
+svg.selectAll('.player')
+    .data([coordinates])
+    .attr('class', 'player')
+    .attr('x', (d) => d[0])
+    .attr('y', (d) => d[1])
+    .style('cursor', 'none');*/
